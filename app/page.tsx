@@ -1,20 +1,17 @@
+import About from "@/components/About";
+import Hero from "@/components/Hero";
+import Showcase from "@/components/Showcase";
+import Testimonials from "@/components/Testimonials";
 import Image from "next/image";
 
 export default function Home() {
   return (
     <div>
-      <p>PRESH</p>
-
-      <div>
-        <p>Frontend development</p>
-        <p>Resume</p>
-        <p>App development</p>
-      </div>
-
+      <Hero />
       <div></div>
-
-      {/* for the horizontal line */}
-      <div></div>
+      <About />
+      <Showcase />
+      <Testimonials />
     </div>
   );
 }
