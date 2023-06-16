@@ -2,21 +2,23 @@ import React from "react";
 
 const Hero = () => {
   return (
-    <>
-      <h1>PRESH</h1>
+    <div className="bg-black px-6">
+      <h1 className="text-[10rem] leading-[20rem] pt-8 text-center font-normal text-white">
+        PRESH
+      </h1>
 
-      <section>
-        <p>Frontend development</p>
-        <div>
+      <section className="text-white text-center">
+        <p className="text-[1.8rem] font-medium">Frontend wizardry.</p>
+        <div className="hidden">
           <p>Github</p>
           <p>Resume</p>
           <p>Email</p>
         </div>
-        <p>App development</p>
+        <p className="hidden">App development</p>
       </section>
 
       <div></div>
-    </>
+    </div>
   );
 };
 
