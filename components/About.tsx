@@ -6,12 +6,13 @@ import css from "../assets/css.png";
 import javascript from "../assets/javascript.png";
 import react from "../assets/react.png";
 import reactNative from "../assets/react-native.png";
-import nextjs from "../assets/nextjs.svg";
+import nextjs from "../assets/nextjs.png";
 import tailwindcss from "../assets/tailwind.png";
 import typescript from "../assets/typescript.png";
 import sass from "../assets/sass.png";
 import git from "../assets/git-orange.png";
 import github from "../assets/github.png";
+
 const About = () => {
   return (
     <section className="bg-black px-6 pb-[6rem] pt-[8rem]">

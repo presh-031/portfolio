@@ -1,4 +1,5 @@
 "use client";
+import Link from "next/link";
 import React, { useState } from "react";
 
 const Showcase = () => {
@@ -38,18 +39,30 @@ const Showcase = () => {
         <div className="mt-4">
           {activeButton === "websites" && (
             <div className=" grid  grid-cols-2  gap-[1.8rem] text-3xl text-white">
-              <div className="grid  h-[16rem]  place-items-center rounded-[2rem] bg-black">
+              <Link
+                href={`/project/gaybible`}
+                className="grid  h-[16rem]  place-items-center rounded-[2rem] bg-black"
+              >
                 <p>GayBible</p>
-              </div>
-              <div className="grid  h-[16rem]  place-items-center rounded-[2rem] bg-black">
+              </Link>
+              <Link
+                href={`/project/audiophile`}
+                className="grid  h-[16rem]  place-items-center rounded-[2rem] bg-black"
+              >
                 <p>Audiophile</p>
-              </div>
-              <div className="grid  h-[16rem]  place-items-center rounded-[2rem] bg-black">
+              </Link>
+              <Link
+                href={`/project/designo`}
+                className="grid  h-[16rem]  place-items-center rounded-[2rem] bg-black"
+              >
                 <p>Designo</p>
-              </div>
-              <div className="grid  h-[16rem]  place-items-center rounded-[2rem] bg-black">
+              </Link>
+              <Link
+                href={`/project/tweeter`}
+                className="grid  h-[16rem]  place-items-center rounded-[2rem] bg-black"
+              >
                 <p>Tweeter</p>
-              </div>
+              </Link>
             </div>
           )}
           {activeButton === "webapps" && (
