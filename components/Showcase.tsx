@@ -8,17 +8,17 @@ const Showcase = () => {
     setActiveButton(button);
   };
   return (
-    <div className="px-6 py-24 bg-[#444]">
+    <div className="bg-[#444] px-6 py-24">
       <p className=" mb-12 text-4xl text-white ">Creative Showcase</p>
 
       <div className="flex flex-col  ">
-        <div className="space-x-4 mb-4">
+        <div className="mb-4 space-x-4">
           <button
             className={`${
               activeButton === "websites"
                 ? "bg-[#634eec] text-white"
                 : "bg-gray-200 text-gray-700"
-            } py-4 text-xl px-8 rounded  transition duration-300`}
+            } rounded px-8 py-4 text-xl  transition duration-300`}
             onClick={() => handleClick("websites")}
           >
             Websites
@@ -28,7 +28,7 @@ const Showcase = () => {
               activeButton === "webapps"
                 ? "bg-[#634eec] text-white"
                 : "bg-gray-200 text-gray-700"
-            } py-4 text-xl px-8 rounded  transition duration-300`}
+            } rounded px-8 py-4 text-xl  transition duration-300`}
             onClick={() => handleClick("webapps")}
           >
             Web Apps
@@ -37,17 +37,17 @@ const Showcase = () => {
 
         <div className="mt-4">
           {activeButton === "websites" && (
-            <div className=" text-2xl  text-white  grid grid-cols-2 gap-[1.8rem]">
-              <div className="h-[16rem]  bg-black  rounded-[2rem] grid place-items-center">
+            <div className=" grid  grid-cols-2  gap-[1.8rem] text-2xl text-white">
+              <div className="grid  h-[16rem]  place-items-center rounded-[2rem] bg-black">
                 <p>GayBible</p>
               </div>
-              <div className="h-[16rem]  bg-black  rounded-[2rem] grid place-items-center">
+              <div className="grid  h-[16rem]  place-items-center rounded-[2rem] bg-black">
                 <p>Audiophile</p>
               </div>
-              <div className="h-[16rem]  bg-black  rounded-[2rem] grid place-items-center">
+              <div className="grid  h-[16rem]  place-items-center rounded-[2rem] bg-black">
                 <p>Designo</p>
               </div>
-              <div className="h-[16rem]  bg-black  rounded-[2rem] grid place-items-center">
+              <div className="grid  h-[16rem]  place-items-center rounded-[2rem] bg-black">
                 <p>Tweeter</p>
               </div>
             </div>
