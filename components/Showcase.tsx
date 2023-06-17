@@ -16,7 +16,7 @@ const Showcase = () => {
           <button
             className={`${
               activeButton === "websites"
-                ? "bg-blue-500 text-white"
+                ? "bg-black text-white"
                 : "bg-gray-200 text-gray-700"
             } py-4 text-xl px-8 rounded  transition duration-300`}
             onClick={() => handleClick("websites")}
@@ -26,7 +26,7 @@ const Showcase = () => {
           <button
             className={`${
               activeButton === "webapps"
-                ? "bg-blue-500 text-white"
+                ? "bg-black text-white"
                 : "bg-gray-200 text-gray-700"
             } py-4 text-xl px-8 rounded  transition duration-300`}
             onClick={() => handleClick("webapps")}
@@ -37,7 +37,7 @@ const Showcase = () => {
 
         <div className="mt-4">
           {activeButton === "websites" && (
-            <div className="  transition duration-300 text-white  grid grid-cols-2 gap-[1.8rem]">
+            <div className=" text-2xl  text-white  grid grid-cols-2 gap-[1.8rem]">
               <div className="h-[16rem]  bg-black  rounded-[2rem] grid place-items-center">
                 <p>GayBible</p>
               </div>
@@ -52,7 +52,9 @@ const Showcase = () => {
               </div>
             </div>
           )}
-          {activeButton === "webapps" && <p className="">Coming soon!</p>}
+          {activeButton === "webapps" && (
+            <p className="text-2xl text-white">Coming soon!</p>
+          )}
         </div>
       </div>
     </div>
