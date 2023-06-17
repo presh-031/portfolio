@@ -1,10 +1,12 @@
 import React from "react";
-import code from "../assets/code.jpeg";
 import Image from "next/image";
+import { league_gothic } from "@/app/fonts";
 const Hero = () => {
   return (
     <div className="bg-black px-6">
-      <h1 className="pt-8 text-center text-[10rem] font-normal leading-[20rem] text-white">
+      <h1
+        className={`${league_gothic} pt-8  text-center text-[10rem] font-normal leading-[20rem] text-white`}
+      >
         PRESH
       </h1>
 
