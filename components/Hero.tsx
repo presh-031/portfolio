@@ -1,5 +1,6 @@
 import React from "react";
-
+import code from "../assets/code.jpeg";
+import Image from "next/image";
 const Hero = () => {
   return (
     <div className="bg-black px-6">
@@ -17,7 +18,7 @@ const Hero = () => {
         <p className="hidden">App development</p>
       </section>
 
-      <div></div>
+      <div>{/* <Image src={code} alt="code" /> */}</div>
     </div>
   );
 };

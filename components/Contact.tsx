@@ -5,7 +5,7 @@ import { FaTwitter } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 const Contact = () => {
   return (
-    <div>
+    <div className="bg-[#444] text-white">
       <Image src={bubblish} alt="bubblish" />
       <h3>Contact</h3>
       <p>

@@ -4,6 +4,7 @@ import Showcase from "@/components/Showcase";
 import Testimonials from "@/components/Testimonials";
 import Image from "next/image";
 import RootLayout from "./layout";
+import Contact from "@/components/Contact";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
         <About />
         <Showcase />
         <Testimonials />
+        <Contact />
       </div>
     </RootLayout>
   );
