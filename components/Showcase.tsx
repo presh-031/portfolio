@@ -16,7 +16,7 @@ const Showcase = () => {
           <button
             className={`${
               activeButton === "websites"
-                ? "bg-black text-white"
+                ? "bg-[#634eec] text-white"
                 : "bg-gray-200 text-gray-700"
             } py-4 text-xl px-8 rounded  transition duration-300`}
             onClick={() => handleClick("websites")}
@@ -26,7 +26,7 @@ const Showcase = () => {
           <button
             className={`${
               activeButton === "webapps"
-                ? "bg-black text-white"
+                ? "bg-[#634eec] text-white"
                 : "bg-gray-200 text-gray-700"
             } py-4 text-xl px-8 rounded  transition duration-300`}
             onClick={() => handleClick("webapps")}
