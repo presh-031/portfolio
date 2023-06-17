@@ -6,7 +6,10 @@ import css from "../assets/css.png";
 import javascript from "../assets/javascript.png";
 import react from "../assets/react.png";
 import reactNative from "../assets/react-native.png";
+import nextjs from "../assets/nextjs.svg";
 import tailwindcss from "../assets/tailwind.png";
+import typescript from "../assets/typescript.png";
+import sass from "../assets/sass.png";
 import git from "../assets/git-orange.png";
 import github from "../assets/github.png";
 const About = () => {
@@ -37,7 +40,7 @@ const About = () => {
           <span>JAVASCRIPT</span>
         </div>
         <div className="flex h-[14rem] flex-col items-center justify-between">
-          <Image src={react} alt="react" width={100} height={100} />
+          <Image src={nextjs} alt="nextjs" width={100} height={100} />
           <span>NEXT.JS</span>
         </div>{" "}
         <div className="flex h-[14rem] flex-col items-center justify-between">
@@ -55,6 +58,14 @@ const About = () => {
         <div className="flex h-[14rem] flex-col items-center justify-between">
           <Image src={css} alt="css" width={100} height={100} />
           <span>CSS 3</span>
+        </div>
+        <div className="flex h-[14rem] flex-col items-center justify-between">
+          <Image src={typescript} alt="typescript" width={100} height={100} />
+          <span>TYPESCRIPT</span>
+        </div>
+        <div className="flex h-[14rem] flex-col items-center justify-between">
+          <Image src={sass} alt="sass" width={100} height={100} />
+          <span>SASS</span>
         </div>
         <div className="flex h-[14rem] flex-col items-center justify-between">
           <Image src={tailwindcss} alt="tailwindcss" width={100} height={100} />

@@ -37,7 +37,7 @@ const Showcase = () => {
 
         <div className="mt-4">
           {activeButton === "websites" && (
-            <div className=" grid  grid-cols-2  gap-[1.8rem] text-2xl text-white">
+            <div className=" grid  grid-cols-2  gap-[1.8rem] text-3xl text-white">
               <div className="grid  h-[16rem]  place-items-center rounded-[2rem] bg-black">
                 <p>GayBible</p>
               </div>
