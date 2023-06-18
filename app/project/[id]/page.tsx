@@ -4,9 +4,8 @@ import React from "react";
 import { useRouter } from "next/navigation";
 import { projects } from "@/app/data";
 import Image from "next/image";
-
-import react from "../../../assets/react.png";
 import { BiCodeAlt } from "react-icons/bi";
+
 const Project = ({ params }: { params: { id: string } }) => {
   const router = useRouter();
 
@@ -18,6 +17,7 @@ const Project = ({ params }: { params: { id: string } }) => {
     router.push("/");
     return;
   }
+
   return (
     // should params be passed as a prop in next 13 ??
 
@@ -42,7 +42,13 @@ const Project = ({ params }: { params: { id: string } }) => {
               key={tech}
               className="flex h-[8rem] flex-col items-center justify-between"
             >
-              <Image src={`/${tech}.png`} alt={tech} width={50} height={50} />
+              <Image
+                className="object-cover"
+                src={`/${tech}.png`}
+                alt={tech}
+                width={50}
+                height={50}
+              />
               <p className="capitalize">{tech}</p>
             </div>
           );
