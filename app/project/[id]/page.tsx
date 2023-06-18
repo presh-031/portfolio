@@ -42,7 +42,7 @@ const Project = ({ params }: { params: { id: string } }) => {
               key={tech}
               className="flex h-[8rem] flex-col items-center justify-between"
             >
-              <Image src={react} alt={tech} width={50} height={50} />
+              <Image src={`/${tech}.png`} alt={tech} width={50} height={50} />
               <p className="capitalize">{tech}</p>
             </div>
           );
@@ -52,7 +52,7 @@ const Project = ({ params }: { params: { id: string } }) => {
       <p className="mt-12 text-3xl uppercase text-[#ebebeb]">Links</p>
       <div className="mt-8 flex gap-8">
         <a
-          className="flex w-[10rem] items-center justify-center rounded bg-gray-200 py-6   text-3xl text-gray-700"
+          className="flex w-[10rem] items-center justify-center gap-2 rounded bg-gray-200 py-6   text-3xl text-gray-700"
           href={project[0].github}
           target="_blank"
           rel="noopener noreferrer"
