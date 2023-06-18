@@ -1,14 +1,23 @@
 import React from "react";
+import Image, { StaticImageData } from "next/image";
 
-const Testimonial = () => {
+type TestimonialProps = {
+  logo: StaticImageData;
+  remark: string;
+  client: string;
+};
+const Testimonial = ({ logo, remark, client }: TestimonialProps) => {
   return (
     <div className="mb-4 rounded-[2rem] bg-[#515151] px-16 py-12 text-center">
-      <p className="mb-14">Logo</p>
-      <p className="mb-14 text-2xl font-medium">
-        Presh created the most elegant and powerful web experience we&apos;ve
-        ever seen. We couldn&apos;t have asked for anything better.
-      </p>
-      <p className="text-2xl">EleganceCorp</p>
+      <Image
+        src={logo}
+        alt="logo"
+        width={80}
+        height={80}
+        className="mx-auto mb-2 h-[10rem] w-[10rem] object-contain"
+      />
+      <p className="mb-14 text-2xl font-medium">&quot;{remark}&quot;</p>
+      <p className="text-2xl capitalize">{client}</p>
     </div>
   );
 };
