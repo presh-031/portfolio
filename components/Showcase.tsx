@@ -43,7 +43,7 @@ const Showcase = () => {
                 href={`/project/gaybible`}
                 className="grid  h-[16rem]  place-items-center rounded-[2rem] bg-black"
               >
-                <p>GayBible</p>
+                <p>GayBible Inc</p>
               </Link>
               <Link
                 href={`/project/audiophile`}
