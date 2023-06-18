@@ -1,7 +1,6 @@
 import React from "react";
 import Testimonial from "./Testimonial";
 import gaybible from "../../assets/gaybible.webp";
-import designo from "../../assets/designo.png";
 
 const Testimonials = () => {
   return (

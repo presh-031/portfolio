@@ -3,9 +3,8 @@ import React from "react";
 import { useRouter } from "next/navigation";
 import { projects } from "@/app/data";
 import Image from "next/image";
-import { BiCodeAlt } from "react-icons/bi";
+import { BiCodeAlt, BiArrowBack } from "react-icons/bi";
 import { useState } from "react";
-import Footer from "@/components/Footer";
 
 const Project = ({ params }: { params: { id: string } }) => {
   const router = useRouter();
@@ -30,9 +29,10 @@ const Project = ({ params }: { params: { id: string } }) => {
       <button
         type="button"
         onClick={() => router.push("/")}
-        className=" p-2 text-3xl underline"
+        className=" flex items-center py-4 pr-4 text-3xl"
       >
-        Back
+        <BiArrowBack />
+        <span>Back</span>
       </button>
       <h1 className="mt-12 text-center text-6xl uppercase">{project[0].id}</h1>
 
