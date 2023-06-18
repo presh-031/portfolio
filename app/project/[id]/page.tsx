@@ -5,6 +5,7 @@ import { projects } from "@/app/data";
 import Image from "next/image";
 import { BiCodeAlt } from "react-icons/bi";
 import { useState } from "react";
+import Footer from "@/components/Footer";
 
 const Project = ({ params }: { params: { id: string } }) => {
   const router = useRouter();
@@ -25,11 +26,11 @@ const Project = ({ params }: { params: { id: string } }) => {
   return (
     // should params be passed as a prop in next 13 ??
 
-    <div className="min-h-screen bg-black px-6  text-white">
+    <div className="min-h-screen bg-black px-6 py-16  text-white">
       <button
         type="button"
         onClick={() => router.push("/")}
-        className=" mt-16 p-2 text-3xl underline"
+        className=" p-2 text-3xl underline"
       >
         Back
       </button>
@@ -79,7 +80,7 @@ const Project = ({ params }: { params: { id: string } }) => {
         </a>
       </div>
 
-      <p className="mt-12 text-3xl uppercase text-[#ebebeb]">Screenshots</p>
+      {/* <p className="mt-12 text-3xl uppercase text-[#ebebeb]">Screenshots</p>
       <Image
         className="mt-8 h-[20rem] w-full"
         src={currentImage}
@@ -143,7 +144,7 @@ const Project = ({ params }: { params: { id: string } }) => {
           width={100}
           height={100}
         />
-      </div>
+      </div> */}
     </div>
   );
 };
