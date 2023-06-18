@@ -6,9 +6,12 @@ import { useRouter } from "next/navigation";
 import { projects } from "@/app/data";
 import Image from "next/image";
 import { BiCodeAlt } from "react-icons/bi";
+import { useState } from "react";
+import Contact from "@/components/Contact";
 
 const Project = ({ params }: { params: { id: string } }) => {
   const router = useRouter();
+  const [currentImage, setCurrentImage] = useState("/css.png");
 
   const project = projects.filter((project) => {
     return project.id === params.id;
@@ -18,6 +21,9 @@ const Project = ({ params }: { params: { id: string } }) => {
     router.push("/");
     return;
   }
+  const handleImageClick = (src: string) => {
+    setCurrentImage(src);
+  };
 
   return (
     // should params be passed as a prop in next 13 ??
@@ -76,7 +82,71 @@ const Project = ({ params }: { params: { id: string } }) => {
         </a>
       </div>
 
-      <p className="mt-12 text-3xl uppercase text-[#ebebeb]">Screeshots</p>
+      <p className="mt-12 text-3xl uppercase text-[#ebebeb]">Screenshots</p>
+      <Image
+        className="mt-8 h-[20rem] w-full"
+        src={currentImage}
+        alt=""
+        width={100}
+        height={200}
+      />
+
+      <div className="mt-8 grid grid-cols-3 gap-4">
+        <Image
+          onClick={() => {
+            handleImageClick("/css.png");
+          }}
+          src={"/css.png"}
+          alt=""
+          width={100}
+          height={100}
+        />
+        <Image
+          onClick={() => {
+            handleImageClick("/html.png");
+          }}
+          src={"/html.png"}
+          alt=""
+          width={100}
+          height={100}
+        />
+        <Image
+          onClick={() => {
+            handleImageClick("/javascript.png");
+          }}
+          src={"/javascript.png"}
+          alt=""
+          width={100}
+          height={100}
+        />
+        <Image
+          onClick={() => {
+            handleImageClick("/react.png");
+          }}
+          src={"/react.png"}
+          alt=""
+          width={100}
+          height={100}
+        />
+        <Image
+          onClick={() => {
+            handleImageClick("/tailwind.png");
+          }}
+          src={"/tailwind.png"}
+          alt=""
+          width={100}
+          height={100}
+        />
+        <Image
+          onClick={() => {
+            handleImageClick("/sass.png");
+          }}
+          src={"/sass.png"}
+          alt=""
+          width={100}
+          height={100}
+        />
+      </div>
     </div>
   );
 };
