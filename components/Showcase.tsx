@@ -23,20 +23,20 @@ const Showcase = () => {
               activeButton === "websites"
                 ? "bg-[#634eec] text-white"
                 : "bg-gray-200 text-gray-700"
-            } rounded px-8 py-4 text-xl  transition duration-300`}
+            } w-[10rem] rounded py-4 text-xl  transition duration-300`}
             onClick={() => handleClick("websites")}
           >
-            Websites
+            Web
           </button>
           <button
             className={`${
               activeButton === "webapps"
                 ? "bg-[#634eec] text-white"
                 : "bg-gray-200 text-gray-700"
-            } rounded px-8 py-4 text-xl  transition duration-300`}
+            } w-[10rem] rounded py-4 text-xl  transition duration-300`}
             onClick={() => handleClick("webapps")}
           >
-            Web Apps
+            Mobile
           </button>
         </div>
 
