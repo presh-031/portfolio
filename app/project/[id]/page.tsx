@@ -1,13 +1,10 @@
 "use client";
 import React from "react";
-
 import { useRouter } from "next/navigation";
-
 import { projects } from "@/app/data";
 import Image from "next/image";
 import { BiCodeAlt } from "react-icons/bi";
 import { useState } from "react";
-import Contact from "@/components/Contact";
 
 const Project = ({ params }: { params: { id: string } }) => {
   const router = useRouter();

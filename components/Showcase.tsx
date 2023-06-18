@@ -1,7 +1,11 @@
 "use client";
 import Link from "next/link";
 import React, { useState } from "react";
-
+import audiophile from "../assets/audiophile.svg";
+import gaybible from "../assets/gaybible.webp";
+import designo from "../assets/designo.png";
+import tweeter from "../assets/tweeter.svg";
+import Image from "next/image";
 const Showcase = () => {
   const [activeButton, setActiveButton] = useState("websites");
 
@@ -41,27 +45,51 @@ const Showcase = () => {
             <div className=" grid  grid-cols-2  gap-[1.8rem] text-3xl text-white">
               <Link
                 href={`/project/gaybible`}
-                className="grid  h-[16rem]  place-items-center rounded-[2rem] bg-black"
+                className=" grid h-[16rem] place-items-center rounded-[2rem] bg-black "
               >
-                <p>GayBible Inc</p>
+                <Image
+                  className="w-[80%]"
+                  src={gaybible}
+                  alt="gaybible"
+                  width={80}
+                  height={80}
+                />
               </Link>
               <Link
                 href={`/project/audiophile`}
-                className="grid  h-[16rem]  place-items-center rounded-[2rem] bg-black"
+                className="grid h-[16rem] place-items-center rounded-[2rem] bg-black "
               >
-                <p>Audiophile</p>
+                <Image
+                  className="w-[80%]"
+                  src={audiophile}
+                  alt="audiophile"
+                  width={80}
+                  height={80}
+                />
               </Link>
               <Link
                 href={`/project/designo`}
-                className="grid  h-[16rem]  place-items-center rounded-[2rem] bg-black"
+                className="grid h-[16rem] place-items-center rounded-[2rem] bg-black"
               >
-                <p>Designo</p>
+                <Image
+                  className="w-[80%]"
+                  src={designo}
+                  alt="designo"
+                  width={80}
+                  height={80}
+                />
               </Link>
               <Link
                 href={`/project/tweeter`}
-                className="grid  h-[16rem]  place-items-center rounded-[2rem] bg-black"
+                className="grid h-[16rem] place-items-center rounded-[2rem] bg-black"
               >
-                <p>Tweeter</p>
+                <Image
+                  className="w-[80%]"
+                  src={tweeter}
+                  alt="tweeter"
+                  width={80}
+                  height={80}
+                />
               </Link>
             </div>
           )}
