@@ -50,7 +50,7 @@ const Project = ({ params }: { params: { id: string } }) => {
                 width={50}
                 height={50}
               />
-              <p className="capitalize">{tech}</p>
+              <p className="text-center capitalize">{tech}</p>
             </div>
           );
         })}
