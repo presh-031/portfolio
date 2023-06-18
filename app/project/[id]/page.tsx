@@ -24,7 +24,7 @@ const Project = ({ params }: { params: { id: string } }) => {
     <div className="min-h-screen bg-black px-6  text-white">
       <button
         type="button"
-        onClick={() => router.back()}
+        onClick={() => router.push("/")}
         className=" mt-16 p-2 text-3xl underline"
       >
         Back
