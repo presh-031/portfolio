@@ -28,7 +28,7 @@ const Project = ({ params }: { params: { id: string } }) => {
     <div className="min-h-screen bg-black px-6 py-16  text-white">
       <button
         type="button"
-        onClick={() => router.push("/")}
+        onClick={() => router.back()}
         className=" flex items-center py-4 pr-4 text-3xl"
       >
         <BiArrowBack />
