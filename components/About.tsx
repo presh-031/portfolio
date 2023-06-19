@@ -35,7 +35,7 @@ const About = () => {
       <h2 className=" mb-[2rem] mt-[4rem] text-[2rem] text-[#ebebeb]">
         Tech Stack
       </h2>
-      <div className="grid grid-cols-3 gap-8 text-xl text-[#d6d6d6]">
+      <div className="grid grid-cols-3 gap-8 text-center text-xl text-[#d6d6d6]">
         <div className="flex h-[14rem] flex-col items-center justify-between">
           <Image src={javascript} alt="javascript" width={100} height={100} />
           <span>JAVASCRIPT</span>

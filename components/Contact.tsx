@@ -24,20 +24,35 @@ const Contact = () => {
       <div className="mt-16  text-4xl text-[#d6d6d6]">
         {/* The link will be on each icon */}
         <div className="flex items-center gap-4">
-          <span className=" text-3xl leading-[4rem]">Socials: </span>{" "}
-          <FaTwitter /> <FaInstagram />
+          <span className=" text-3xl leading-[4rem] ">Socials: </span>{" "}
+          <a href="https://twitter.com/Presh_031" target="_blank">
+            <FaTwitter />
+          </a>
+          <a href="https://www.instagram.com/mide_031/" target="_blank">
+            <FaInstagram />
+          </a>
         </div>
         {/* The link will be on each entire paragraph, better ux */}
-        <div className="flex items-center gap-4">
-          <span className=" text-3xl leading-[4rem]">Email:</span>{" "}
-          <MdOutlineEmail />
+        <div>
+          <span className="inline-flex items-center gap-4 ">
+            <span className=" text-3xl leading-[4rem]">Email:</span>{" "}
+            <MdOutlineEmail />
+          </span>
         </div>
-        <div className="flex items-center gap-4">
-          <span className=" text-3xl leading-[4rem]">Github:</span> <BsGithub />
+        <div>
+          <a
+            href="https://github.com/presh-031"
+            className="inline-flex items-center gap-4 "
+          >
+            <span className=" text-3xl leading-[4rem]">Github:</span>{" "}
+            <BsGithub />
+          </a>
         </div>
-        <div className="flex items-center gap-4">
-          <span className=" text-3xl leading-[4rem]">Resume:</span>
-          <HiOutlineDocument />
+        <div>
+          <a href="" className="inline-flex items-center gap-4 ">
+            <span className=" text-3xl leading-[4rem]">Resume:</span>
+            <HiOutlineDocument />
+          </a>
         </div>
       </div>
     </div>
