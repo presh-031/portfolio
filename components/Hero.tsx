@@ -2,6 +2,7 @@ import React from "react";
 import Image from "next/image";
 import { league_gothic } from "@/app/fonts";
 import self from "../assets/self.jpg";
+import { BsArrowDown, BsArrowDownUp } from "react-icons/bs";
 const Hero = () => {
   return (
     <div className="bg-black px-6 pt-[8rem]">
@@ -20,6 +21,8 @@ const Hero = () => {
 
       <section className="text-center text-white">
         <p className="text-[1.8rem] font-medium">Software Engineer.</p>
+        <BsArrowDown className="mx-auto my-4 text-4xl" />
+        <p className="text-[1.2rem] font-medium">Web and App Developer.</p>
         <div className="hidden">
           <p>Github</p>
           <p>Resume</p>
@@ -27,8 +30,6 @@ const Hero = () => {
         </div>
         <p className="hidden">App development</p>
       </section>
-
-      <div>{/* <Image src={code} alt="code" /> */}</div>
     </div>
   );
 };
