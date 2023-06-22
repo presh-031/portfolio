@@ -4,12 +4,10 @@ import { useRouter } from "next/navigation";
 import { projects } from "@/app/data";
 import Image from "next/image";
 import { BiCodeAlt, BiArrowBack } from "react-icons/bi";
-import { useState } from "react";
 import Gallery from "@/components/Gallery";
 
 const Project = ({ params }: { params: { id: string } }) => {
   const router = useRouter();
-  const [currentImage, setCurrentImage] = useState("/css.png");
 
   const project = projects.filter((project) => {
     return project.id === params.id;
@@ -19,9 +17,6 @@ const Project = ({ params }: { params: { id: string } }) => {
     router.push("/");
     return;
   }
-  const handleImageClick = (src: string) => {
-    setCurrentImage(src);
-  };
 
   return (
     <div className="min-h-screen bg-black px-6 py-16  text-white">
@@ -39,7 +34,7 @@ const Project = ({ params }: { params: { id: string } }) => {
         <p className=" mt-6 text-2xl text-[#d6d6d6]">{project[0].about}</p>
       </div>
       <p className="mt-12 text-3xl uppercase text-[#ebebeb]">Screenshots</p>
-      <Gallery />
+      <Gallery route={params.id} />
       <p className="mt-12 text-3xl uppercase text-[#ebebeb]">Links</p>
       <div className="mt-8 flex gap-8">
         <a
