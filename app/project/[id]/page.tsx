@@ -33,7 +33,9 @@ const Project = ({ params }: { params: { id: string } }) => {
         <p className="mt-12 text-3xl uppercase text-[#ebebeb]">About</p>
         <p className=" mt-6 text-2xl text-[#d6d6d6]">{project[0].about}</p>
       </div>
-      <p className="mt-12 text-3xl uppercase text-[#ebebeb]">Screenshots</p>
+      <p className="mb-6 mt-12 text-3xl uppercase text-[#ebebeb]">
+        Screenshots
+      </p>
       <Gallery route={params.id} />
       <p className="mt-12 text-3xl uppercase text-[#ebebeb]">Links</p>
       <div className="mt-8 flex gap-8">
