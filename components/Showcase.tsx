@@ -14,17 +14,20 @@ const Showcase = () => {
   };
   return (
     <div className=" py-24">
-      <p className=" mb-12 text-4xl text-white ">Creative Showcase</p>
+      <p className=" mb-12 text-4xl text-white md:text-[2.8rem]">
+        Creative Showcase
+      </p>
 
       <div className="flex flex-col  ">
-        <div className="mb-4 space-x-4">
+        <div className="mb-4 space-x-4 text-xl md:space-x-12 md:text-4xl">
           <button
             className={`${
               activeButton === "websites"
                 ? "bg-[#634eec] text-white"
                 : "bg-gray-200 text-gray-700"
-            } w-[10rem] rounded py-4 text-xl  transition duration-300`}
+            } w-[10rem] rounded py-4  transition duration-300  md:w-[20rem] md:py-8`}
             onClick={() => handleClick("websites")}
+            role="button"
           >
             Web
           </button>
@@ -33,8 +36,9 @@ const Showcase = () => {
               activeButton === "webapps"
                 ? "bg-[#634eec] text-white"
                 : "bg-gray-200 text-gray-700"
-            } w-[10rem] rounded py-4 text-xl  transition duration-300`}
+            } w-[10rem] rounded py-4  transition duration-300  md:w-[20rem] md:py-8`}
             onClick={() => handleClick("webapps")}
+            role="button"
           >
             Mobile
           </button>
@@ -42,13 +46,13 @@ const Showcase = () => {
 
         <div className="mt-4">
           {activeButton === "websites" && (
-            <div className=" grid  grid-cols-2  gap-[1.8rem] text-3xl text-white">
+            <div className=" grid grid-cols-2  gap-[1.8rem]  text-3xl text-white md:gap-[3rem]">
               <Link
                 href={`/project/gaybible`}
-                className=" grid h-[16rem] place-items-center rounded-[2rem] bg-black "
+                className=" grid h-[16rem] place-items-center rounded-[2rem] bg-black md:h-[58.5rem] "
               >
                 <Image
-                  className="w-[80%]"
+                  className="w-[80%]  md:w-[60%]"
                   src={gaybible}
                   alt="gaybible"
                   width={80}
@@ -57,10 +61,10 @@ const Showcase = () => {
               </Link>
               <Link
                 href={`/project/audiophile`}
-                className="grid h-[16rem] place-items-center rounded-[2rem] bg-black "
+                className="grid h-[16rem] place-items-center rounded-[2rem] bg-black md:h-[58.5rem]  "
               >
                 <Image
-                  className="w-[80%]"
+                  className="w-[80%]  md:w-[60%]"
                   src={audiophile}
                   alt="audiophile"
                   width={80}
@@ -69,10 +73,10 @@ const Showcase = () => {
               </Link>
               <Link
                 href={`/project/designo`}
-                className="grid h-[16rem] place-items-center rounded-[2rem] bg-black"
+                className="grid h-[16rem] place-items-center rounded-[2rem] bg-black md:h-[58.5rem] "
               >
                 <Image
-                  className="w-[80%]"
+                  className="w-[80%]  md:w-[60%]"
                   src={designo}
                   alt="designo"
                   width={80}
@@ -81,10 +85,10 @@ const Showcase = () => {
               </Link>
               <Link
                 href={`/project/tweeter`}
-                className="grid h-[16rem] place-items-center rounded-[2rem] bg-black"
+                className="grid h-[16rem] place-items-center rounded-[2rem] bg-black md:h-[58.5rem] "
               >
                 <Image
-                  className="w-[80%]"
+                  className="w-[80%]  md:w-[60%]"
                   src={tweeter}
                   alt="tweeter"
                   width={80}
@@ -94,7 +98,7 @@ const Showcase = () => {
             </div>
           )}
           {activeButton === "webapps" && (
-            <p className="text-2xl text-white">Coming soon!</p>
+            <p className="text-2xl text-white md:text-5xl">Coming soon!</p>
           )}
         </div>
       </div>

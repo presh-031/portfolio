@@ -21,11 +21,11 @@ const Hero = () => {
 
       <section className="text-center text-white md:hidden">
         <p className="text-[1.8rem] font-medium md:text-[3.8rem]">
-          Software Engineer.
+          Software Engineer
         </p>
         <BsArrowDown className="mx-auto my-4  text-4xl md:text-6xl" />
         <p className="text-[1.2rem] font-medium md:text-[2.6rem]">
-          Web and App Developer.
+          Web and App Developer
         </p>{" "}
       </section>
 
