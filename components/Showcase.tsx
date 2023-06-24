@@ -6,6 +6,7 @@ import gaybible from "../assets/gaybible.webp";
 import designo from "../assets/designo.png";
 import tweeter from "../assets/tweeter.svg";
 import Image from "next/image";
+
 const Showcase = () => {
   const [activeButton, setActiveButton] = useState("websites");
 
@@ -46,10 +47,10 @@ const Showcase = () => {
 
         <div className="mt-4 sm:mt-8 ">
           {activeButton === "websites" && (
-            <div className=" grid grid-cols-2  gap-[1.8rem]  text-3xl text-white sm:gap-[3rem]">
+            <div className=" grid grid-cols-2  gap-[1.8rem]  text-3xl text-white sm:gap-[2.2rem] md:gap-[3rem]">
               <Link
                 href={`/project/gaybible`}
-                className=" grid h-[16rem] place-items-center rounded-[2rem] bg-black sm:h-[51.5rem] "
+                className=" grid h-[16rem] place-items-center rounded-[2rem] bg-black sm:h-[40rem] lg:h-[51.5rem] "
               >
                 <Image
                   className="w-[80%]  sm:w-[60%]"
@@ -61,7 +62,7 @@ const Showcase = () => {
               </Link>
               <Link
                 href={`/project/audiophile`}
-                className="grid h-[16rem] place-items-center rounded-[2rem] bg-black sm:h-[51.5rem]  "
+                className="grid h-[16rem] place-items-center rounded-[2rem] bg-black sm:h-[40rem] lg:h-[51.5rem]  "
               >
                 <Image
                   className="w-[80%]  sm:w-[60%]"
@@ -73,7 +74,7 @@ const Showcase = () => {
               </Link>
               <Link
                 href={`/project/designo`}
-                className="grid h-[16rem] place-items-center rounded-[2rem] bg-black sm:h-[51.5rem] "
+                className="grid h-[16rem] place-items-center rounded-[2rem] bg-black  sm:h-[40rem] lg:h-[51.5rem] "
               >
                 <Image
                   className="w-[80%]  sm:w-[60%]"
@@ -85,7 +86,7 @@ const Showcase = () => {
               </Link>
               <Link
                 href={`/project/tweeter`}
-                className="grid h-[16rem] place-items-center rounded-[2rem] bg-black sm:h-[51.5rem] "
+                className="grid h-[16rem] place-items-center rounded-[2rem] bg-black sm:h-[40rem] lg:h-[51.5rem] "
               >
                 <Image
                   className="w-[80%]  sm:w-[60%]"

@@ -14,7 +14,7 @@ const Hero = () => {
         height={200}
       />
       <h1
-        className={`border  border-red-800 text-center text-[10rem] font-bold  text-white md:text-[29rem]  md:leading-[30rem] `}
+        className={`text-center text-[10rem] font-bold  text-white md:text-[20rem] md:leading-[30rem]  lg:text-[29rem] `}
       >
         PRESH
       </h1>
