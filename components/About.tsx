@@ -4,7 +4,7 @@ import React from "react";
 const About = () => {
   return (
     <section className=" pb-[6rem] pt-[8rem]">
-      <h2 className=" mb-[4rem] text-[2.8rem] text-[#ebebeb] md:text-[4rem]">
+      <h2 className=" mb-[4rem] text-[2.8rem] text-[#ebebeb] sm:text-[4rem]">
         Master Craftsman
       </h2>
       <div className="text-3xl leading-[3rem] text-[#d6d6d6] md:flex md:justify-between md:gap-16 md:text-[2rem]">

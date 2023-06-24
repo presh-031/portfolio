@@ -11,14 +11,14 @@ export default function Home() {
   return (
     <RootLayout>
       <div className="bg-black">
-        <div className="mx-auto max-w-[1100px] px-6 md:px-12">
+        <div className="mx-auto max-w-[1050px] px-6 sm:px-12">
           <Hero />
           <About />
           <TechStack />
         </div>
       </div>
       <div className="bg-[#444]">
-        <div className="mx-auto max-w-[1100px] px-6 md:px-12">
+        <div className="mx-auto max-w-[1050px] px-6 sm:px-12">
           <Showcase />
           <Testimonials />
           <Contact />

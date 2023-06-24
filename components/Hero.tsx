@@ -14,12 +14,12 @@ const Hero = () => {
         height={200}
       />
       <h1
-        className={`  text-center text-[10rem] font-bold  text-white  md:text-[20rem] `}
+        className={`text-center  text-[10rem]  font-bold leading-[30rem]  text-white  md:text-[29rem] `}
       >
         PRESH
       </h1>
 
-      <section className="text-center text-white md:hidden">
+      <section className="text-center  text-white md:hidden">
         <p className="text-[1.8rem] font-medium md:text-[3.8rem]">
           Software Engineer
         </p>
@@ -29,12 +29,11 @@ const Hero = () => {
         </p>{" "}
       </section>
 
-      <div className="hidden text-white md:flex md:justify-between md:text-4xl">
+      <div className="hidden  text-white   md:flex md:justify-between md:text-4xl">
         <p>Frontend Wizardry</p>
         <div className="flex justify-center gap-4">
-          <p>Resume</p>
+          <p>Resume</p> <p>Email</p>
           <p>Github</p>
-          <p>Email</p>
         </div>
         <p className="">App development</p>
       </div>
