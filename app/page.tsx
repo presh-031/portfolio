@@ -10,7 +10,7 @@ import TechStack from "@/components/TechStack";
 export default function Home() {
   return (
     <RootLayout>
-      <>
+      <div className="">
         <Hero />
         <div></div>
         <About />
@@ -19,7 +19,7 @@ export default function Home() {
         <Testimonials />
         <Contact />
         <Footer />
-      </>
+      </div>
     </RootLayout>
   );
 }

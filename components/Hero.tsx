@@ -5,31 +5,41 @@ import self from "../assets/self.jpg";
 import { BsArrowDown, BsArrowDownUp } from "react-icons/bs";
 const Hero = () => {
   return (
-    <div className="bg-black px-6 pt-[8rem]">
-      <Image
-        className="mx-auto h-[20rem] w-[20rem] rounded-full object-cover"
-        src={self}
-        alt="me"
-        width={200}
-        height={200}
-      />
-      <h1
-        className={`${league_gothic.className}  text-center text-[10rem] font-normal  text-white`}
-      >
-        PRESH
-      </h1>
+    <div className="bg-black  px-6 pt-[8rem] md:px-12">
+      <div className="mx-auto max-w-[1000px]">
+        <Image
+          className="mx-auto h-[20rem] w-[20rem] rounded-full object-cover md:mt-24 md:h-[40rem] md:w-[40rem]"
+          src={self}
+          alt="me"
+          width={200}
+          height={200}
+        />
+        <h1
+          className={`  text-center text-[10rem] font-bold  text-white  md:text-[20rem] `}
+        >
+          PRESH
+        </h1>
 
-      <section className="text-center text-white">
-        <p className="text-[1.8rem] font-medium">Software Engineer.</p>
-        <BsArrowDown className="mx-auto my-4 text-4xl" />
-        <p className="text-[1.2rem] font-medium">Web and App Developer.</p>
-        <div className="hidden">
-          <p>Github</p>
-          <p>Resume</p>
-          <p>Email</p>
+        <section className="text-center text-white md:hidden">
+          <p className="text-[1.8rem] font-medium md:text-[3.8rem]">
+            Software Engineer.
+          </p>
+          <BsArrowDown className="mx-auto my-4  text-4xl md:text-6xl" />
+          <p className="text-[1.2rem] font-medium md:text-[2.6rem]">
+            Web and App Developer.
+          </p>{" "}
+        </section>
+
+        <div className="hidden text-white md:flex md:justify-between md:text-4xl">
+          <p>Frontend Wizardry</p>
+          <div className="flex justify-center gap-4">
+            <p>Resume</p>
+            <p>Github</p>
+            <p>Email</p>
+          </div>
+          <p className="">App development</p>
         </div>
-        <p className="hidden">App development</p>
-      </section>
+      </div>
     </div>
   );
 };
