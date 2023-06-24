@@ -4,7 +4,7 @@ import gaybible from "../../assets/gaybible.webp";
 
 const Testimonials = () => {
   return (
-    <div className="bg-[#444] px-6 py-6 text-white">
+    <div className=" py-6 text-white">
       <div className="mx-auto max-w-[1000px]">
         <Testimonial
           logo={gaybible}

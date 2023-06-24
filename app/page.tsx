@@ -10,15 +10,20 @@ import TechStack from "@/components/TechStack";
 export default function Home() {
   return (
     <RootLayout>
-      <div className="">
-        <Hero />
-        <div></div>
-        <About />
-        <TechStack />
-        <Showcase />
-        <Testimonials />
-        <Contact />
-        <Footer />
+      <div className="bg-black">
+        <div className="mx-auto max-w-[1000px] px-6 md:px-12">
+          <Hero />
+          <About />
+          <TechStack />
+        </div>
+      </div>
+      <div className="bg-[#444]">
+        <div className="mx-auto max-w-[1000px] px-6 md:px-12">
+          <Showcase />
+          <Testimonials />
+          <Contact />
+          <Footer />
+        </div>
       </div>
     </RootLayout>
   );

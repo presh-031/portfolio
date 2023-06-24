@@ -3,7 +3,7 @@ import { FaInstagram, FaTwitter } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <footer className="bg-[#444] pb-12 pt-24 text-white">
+    <footer className="pb-12 pt-24 text-white">
       <div className="mx-auto max-w-[1000px]">
         <div className="mb-16 flex items-center justify-center gap-6 text-5xl">
           <a href="https://twitter.com/Presh_031" target="_blank">

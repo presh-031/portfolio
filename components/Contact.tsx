@@ -7,7 +7,7 @@ import { BsGithub } from "react-icons/bs";
 import { HiOutlineDocument } from "react-icons/hi";
 const Contact = () => {
   return (
-    <div className="bg-[#444] px-6 pt-24 text-white">
+    <div className="pt-24 text-white">
       <div className="mx-auto max-w-[1000px]">
         {" "}
         <Image
