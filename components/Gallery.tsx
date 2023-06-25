@@ -56,7 +56,7 @@ const Gallery = ({ route }: GalleryProps) => {
   return (
     <div>
       {getDynamicImages().length ? (
-        <div className="flex h-[50rem] flex-col justify-center overflow-hidden">
+        <div className="flex h-[50rem] flex-col justify-start overflow-hidden">
           <ImageGallery
             items={getDynamicImages()}
             slideInterval={2500}
