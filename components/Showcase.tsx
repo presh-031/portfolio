@@ -50,10 +50,10 @@ const Showcase = () => {
             <div className=" grid grid-cols-2  gap-[1.8rem]  text-3xl text-white sm:gap-[2.2rem] md:gap-[3rem]">
               <Link
                 href={`/project/gaybible`}
-                className=" grid h-[16rem] place-items-center rounded-[2rem] bg-black sm:h-[40rem] lg:h-[51.5rem] "
+                className=" grid h-[16rem] place-items-center rounded-[2rem] bg-black min-[480px]:h-[20rem] min-[520px]:h-[24rem]  sm:h-[31rem] min-[776px]:h-[38rem] min-[880px]:h-[40rem] lg:h-[51.5rem] "
               >
                 <Image
-                  className="w-[80%]  sm:w-[60%]"
+                  className="aspect-square h-[100%] w-[80%]  object-contain sm:w-[60%]"
                   src={gaybible}
                   alt="gaybible"
                   width={80}
@@ -62,10 +62,10 @@ const Showcase = () => {
               </Link>
               <Link
                 href={`/project/audiophile`}
-                className="grid h-[16rem] place-items-center rounded-[2rem] bg-black sm:h-[40rem] lg:h-[51.5rem]  "
+                className=" grid h-[16rem] place-items-center rounded-[2rem] bg-black min-[480px]:h-[20rem] min-[520px]:h-[24rem]  sm:h-[31rem] min-[776px]:h-[38rem] min-[880px]:h-[40rem] lg:h-[51.5rem] "
               >
                 <Image
-                  className="w-[80%]  sm:w-[60%]"
+                  className="aspect-square h-[100%] w-[80%]  object-contain sm:w-[60%]"
                   src={audiophile}
                   alt="audiophile"
                   width={80}
@@ -74,10 +74,10 @@ const Showcase = () => {
               </Link>
               <Link
                 href={`/project/designo`}
-                className="grid h-[16rem] place-items-center rounded-[2rem] bg-black  sm:h-[40rem] lg:h-[51.5rem] "
+                className=" grid h-[16rem] place-items-center rounded-[2rem] bg-black min-[480px]:h-[20rem] min-[520px]:h-[24rem]  sm:h-[31rem] min-[776px]:h-[38rem] min-[880px]:h-[40rem] lg:h-[51.5rem] "
               >
                 <Image
-                  className="w-[80%]  sm:w-[60%]"
+                  className="aspect-square h-[100%] w-[80%]  object-contain sm:w-[60%]"
                   src={designo}
                   alt="designo"
                   width={80}
@@ -86,10 +86,10 @@ const Showcase = () => {
               </Link>
               <Link
                 href={`/project/tweeter`}
-                className="grid h-[16rem] place-items-center rounded-[2rem] bg-black sm:h-[40rem] lg:h-[51.5rem] "
+                className=" grid h-[16rem] place-items-center rounded-[2rem] bg-black min-[480px]:h-[20rem] min-[520px]:h-[24rem]  sm:h-[31rem] min-[776px]:h-[38rem] min-[880px]:h-[40rem] lg:h-[51.5rem] "
               >
                 <Image
-                  className="w-[80%]  sm:w-[60%]"
+                  className="aspect-square h-[100%] w-[80%]  object-contain sm:w-[60%]"
                   src={tweeter}
                   alt="tweeter"
                   width={80}
