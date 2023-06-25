@@ -58,6 +58,8 @@ const Showcase = () => {
                   alt="gaybible"
                   width={80}
                   height={80}
+                  quality={100}
+                  loading="eager"
                 />
               </Link>
               <Link
@@ -70,6 +72,7 @@ const Showcase = () => {
                   alt="audiophile"
                   width={80}
                   height={80}
+                  loading="eager"
                 />
               </Link>
               <Link
@@ -82,6 +85,8 @@ const Showcase = () => {
                   alt="designo"
                   width={80}
                   height={80}
+                  quality={100}
+                  loading="eager"
                 />
               </Link>
               <Link
@@ -94,6 +99,7 @@ const Showcase = () => {
                   alt="tweeter"
                   width={80}
                   height={80}
+                  loading="eager"
                 />
               </Link>
             </div>

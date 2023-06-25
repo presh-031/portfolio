@@ -10,8 +10,7 @@ const Hero = () => {
         className="mx-auto h-[20rem] w-[20rem] rounded-full object-cover md:mt-24 md:h-[40rem] md:w-[40rem]"
         src={self}
         alt="me"
-        width={200}
-        height={200}
+        placeholder="blur"
       />
       <h1
         className={`text-center text-[10rem] font-bold text-white  max-[350px]:text-[8rem] max-[300px]:text-[6rem] md:text-[20rem] md:leading-[30rem]  lg:text-[29rem] `}

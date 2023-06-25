@@ -95,6 +95,7 @@ const Project = ({ params }: { params: { id: string } }) => {
                         alt={tech}
                         width={50}
                         height={50}
+                        loading="eager"
                       />
                       <p className="text-center capitalize">{tech}</p>
                     </div>
