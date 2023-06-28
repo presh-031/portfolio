@@ -17,7 +17,7 @@ const TechStack = () => {
     <div className=" pb-[6rem]">
       {/* Tech stack with icons and names only go below. */}
       <h2 className=" mb-[2rem] text-[2rem] text-[#ebebeb] sm:text-[3rem]">
-        Current Ecosystem
+        Tech Stack
       </h2>
       <div className="grid grid-cols-3 gap-8 text-center text-xl text-[#d6d6d6] sm:grid-cols-4 md:text-3xl">
         <div className="flex h-[14rem] flex-col items-center justify-between">
