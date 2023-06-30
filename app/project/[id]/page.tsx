@@ -6,7 +6,7 @@ import Image from "next/image";
 import { BiCodeAlt, BiArrowBack } from "react-icons/bi";
 import Gallery from "@/components/Gallery";
 
-import "./globals.css";
+import "../../globals.css";
 
 const Project = ({ params }: { params: { id: string } }) => {
   const router = useRouter();
