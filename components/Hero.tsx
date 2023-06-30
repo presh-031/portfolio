@@ -29,7 +29,7 @@ const Hero = () => {
         </p>
         <BsArrowDown className="mx-auto my-4  text-4xl md:text-6xl" />
         <p className="text-[1.2rem] font-medium md:text-[2.6rem]">
-          Web and App Developer
+          Frontend Web Developer
         </p>{" "}
       </section>
 
