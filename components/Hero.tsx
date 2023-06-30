@@ -3,6 +3,7 @@ import Image from "next/image";
 import { league_gothic } from "@/app/fonts";
 import self from "../assets/self.jpg";
 import { BsArrowDown, BsArrowDownUp } from "react-icons/bs";
+import ScrollDownMouse from "./ScrollDownMouse";
 const Hero = () => {
   return (
     <div className=" pt-[8rem]">
@@ -12,11 +13,15 @@ const Hero = () => {
         alt="me"
         placeholder="blur"
       />
+
       <h1
         className={`text-center text-[10rem] font-bold text-white  max-[350px]:text-[8rem] max-[300px]:text-[6rem] md:text-[20rem] md:leading-[30rem]  lg:text-[29rem] `}
       >
         PRESH
       </h1>
+      <div className="absolute bottom-12 right-8">
+        <ScrollDownMouse />
+      </div>
 
       <section className="text-center  text-white md:hidden">
         <p className="text-[1.8rem] font-medium md:text-[3.8rem]">
