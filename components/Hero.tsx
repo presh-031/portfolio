@@ -27,29 +27,23 @@ const Hero = () => {
       >
         PRESH
       </h1>
-      <div className="absolute bottom-12 right-8">
-        <ScrollDownMouse />
-      </div>
 
       <section className="text-center  text-white md:hidden">
-        <p className="text-[1.8rem] font-medium md:text-[3.8rem]">
-          Software Engineer
-        </p>
-        <BsArrowDown className="mx-auto my-4  text-4xl md:text-6xl" />
-        <p className="text-[1.2rem] font-medium md:text-[2.6rem]">
-          Frontend Web Developer
-        </p>{" "}
-        <div className="mt-4 flex items-center justify-center gap-4 text-4xl">
+        <p className="mb-4 text-xl ">Frontend Web Developer</p>
+        <div className=" flex items-center justify-center gap-4 text-4xl text-[#515151]">
           <a href="https://github.com/presh-031" target="_blank">
             <BsGithub />
           </a>
           <a href="https://twitter.com/presh-031" target="_blank">
             <AiOutlineTwitter />
           </a>
-
           <AiFillLinkedin />
         </div>
       </section>
+
+      <div className="absolute bottom-12 right-8">
+        <ScrollDownMouse />
+      </div>
 
       <div className="hidden  text-white   md:flex md:justify-between md:text-4xl">
         <p>Frontend Wizardry</p>
