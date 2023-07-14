@@ -18,7 +18,7 @@ const Hero = () => {
         alt="me"
         placeholder="blur"
       />
-      <div className="mx-auto mt-6 flex w-fit items-center gap-4 rounded-md border-[1px] px-4 py-2 text-white outline">
+      <div className="mx-auto mt-6 flex w-fit items-center gap-4 rounded-md border-[1px] px-4 py-2 text-white ">
         <div className="animate-pulse-light  h-[.8rem] w-[.8rem] rounded-full bg-green-500"></div>
         <p>HIRE ME</p>
       </div>
