@@ -1,0 +1,24 @@
+@keyframes pulse-light {
+  0% {
+    box-shadow: 0 0 0 0 rgba(0, 255, 0, 0.5);
+  }
+  70% {
+    box-shadow: 0 0 0 5px rgba(0, 255, 0, 0.1);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(0, 255, 0, 0);
+  }
+}
+
+@keyframes rotate-360 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-pulse-light {
+  animation: pulse-light 1s infinite, 4s infinite linear;
+}
