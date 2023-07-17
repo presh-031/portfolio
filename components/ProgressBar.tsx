@@ -23,7 +23,7 @@ const ProgressBar = () => {
   }, []);
   return (
     <div
-      className="fixed left-0 top-0 z-[9999] h-[.5rem] bg-gradient-to-r from-red-500  via-yellow-500 to-green-500 transition-all duration-200"
+      className="fixed left-0 top-0 z-[9999] h-[.5rem] bg-gradient-to-r from-red-500  via-yellow-500 to-green-500 "
       style={{ width: `${progress}%` }}
     ></div>
   );
