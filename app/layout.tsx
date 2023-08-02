@@ -1,5 +1,4 @@
 import "./globals.css";
-import { inter } from "./fonts";
 
 export const metadata = {
   title: "Presh | Portfolio",
@@ -13,7 +12,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body>{children}</body>
     </html>
   );
 }
