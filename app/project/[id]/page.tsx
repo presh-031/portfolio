@@ -7,6 +7,7 @@ import { BiCodeAlt, BiArrowBack } from "react-icons/bi";
 import Gallery from "@/components/Gallery";
 
 import "../../globals.css";
+import { poppins } from "@/app/fonts";
 
 const Project = ({ params }: { params: { id: string } }) => {
   const router = useRouter();
@@ -21,7 +22,9 @@ const Project = ({ params }: { params: { id: string } }) => {
   }
 
   return (
-    <div className=" min-h-screen  bg-black  px-6 py-16 text-white  sm:px-12">
+    <div
+      className={`${poppins.className} min-h-screen  bg-black  px-6 py-16 text-white  sm:px-12`}
+    >
       <div className="mx-auto max-w-[1050px]">
         <div className="lg:mb-12 lg:flex lg:items-center">
           <button
