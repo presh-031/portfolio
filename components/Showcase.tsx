@@ -47,7 +47,7 @@ const Showcase = () => {
           {activeButton === "websites" && (
             <div className=" grid grid-cols-2  gap-[1.8rem]  text-3xl text-white sm:gap-[2.2rem] md:gap-[3rem]">
               <Link
-                href={`/project/gaybible`}
+                href={`/projects/gaybible`}
                 className=" grid h-[16rem] place-items-center rounded-[2rem] bg-black min-[480px]:h-[20rem] min-[520px]:h-[24rem]  sm:h-[31rem] min-[776px]:h-[38rem] min-[880px]:h-[40rem] lg:h-[51.5rem] "
               >
                 <Image
@@ -61,7 +61,7 @@ const Showcase = () => {
                 />
               </Link>
               <Link
-                href={`/project/audiophile`}
+                href={`/projects/audiophile`}
                 className=" grid h-[16rem] place-items-center rounded-[2rem] bg-black min-[480px]:h-[20rem] min-[520px]:h-[24rem]  sm:h-[31rem] min-[776px]:h-[38rem] min-[880px]:h-[40rem] lg:h-[51.5rem] "
               >
                 <Image
@@ -74,7 +74,7 @@ const Showcase = () => {
                 />
               </Link>
               <Link
-                href={`/project/designo`}
+                href={`/projects/designo`}
                 className=" grid h-[16rem] place-items-center rounded-[2rem] bg-black min-[480px]:h-[20rem] min-[520px]:h-[24rem]  sm:h-[31rem] min-[776px]:h-[38rem] min-[880px]:h-[40rem] lg:h-[51.5rem] "
               >
                 <Image
@@ -88,7 +88,7 @@ const Showcase = () => {
                 />
               </Link>
               <Link
-                href={`/project/tweeter`}
+                href={`/projects/tweeter`}
                 className=" grid h-[16rem] place-items-center rounded-[2rem] bg-black min-[480px]:h-[20rem] min-[520px]:h-[24rem]  sm:h-[31rem] min-[776px]:h-[38rem] min-[880px]:h-[40rem] lg:h-[51.5rem] "
               >
                 <Image
