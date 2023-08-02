@@ -1,6 +1,5 @@
 import React from "react";
 import Image from "next/image";
-import { league_gothic } from "@/app/fonts";
 import self from "../assets/self.jpg";
 import { BsArrowDown, BsArrowDownUp, BsGithub } from "react-icons/bs";
 import ScrollDownMouse from "./ScrollDownMouse";
