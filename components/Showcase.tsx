@@ -7,6 +7,8 @@ import designo from "../assets/designo.png";
 import tweeter from "../assets/tweeter.svg";
 import Image from "next/image";
 
+import { league_Gothic } from "@/app/fonts";
+
 const Showcase = () => {
   const [activeButton, setActiveButton] = useState("websites");
 
@@ -15,7 +17,11 @@ const Showcase = () => {
   };
   return (
     <div className=" py-24">
-      <p className=" mb-12 text-4xl text-white sm:text-[2.8rem]">Projects</p>
+      <p
+        className={`${league_Gothic.className} mb-12 text-4xl text-white sm:text-[2.8rem]`}
+      >
+        Projects
+      </p>
 
       <div className="flex flex-col  ">
         <div className="mb-4 space-x-4 text-xl sm:space-x-12 sm:text-4xl">

@@ -5,6 +5,7 @@ import { FaInstagram, FaTwitter } from "react-icons/fa";
 import { MdEmail, MdOutlineEmail } from "react-icons/md";
 import { BsGithub } from "react-icons/bs";
 import { HiOutlineDocument } from "react-icons/hi";
+import { league_Gothic } from "@/app/fonts";
 const Contact = () => {
   return (
     <div className="pt-24 text-white  sm:pt-44">
@@ -18,7 +19,9 @@ const Contact = () => {
           height={255}
         />
         <div className="sm:w-[50rem]">
-          <h3 className=" mb-20 mt-44 text-4xl text-white sm:text-5xl ">
+          <h3
+            className={`${league_Gothic.className}  mb-20 mt-44 text-4xl text-white sm:text-5xl`}
+          >
             Contact
           </h3>
           <p className="text-3xl leading-[3rem] text-[#d6d6d6]">

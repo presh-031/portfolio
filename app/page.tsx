@@ -7,12 +7,12 @@ import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 import TechStack from "@/components/TechStack";
 import ProgressBar from "@/components/ProgressBar";
-import { poppins } from "./fonts";
+import { space_Grotesk } from "./fonts";
 
 export default function Home() {
   return (
     <RootLayout>
-      <div className={poppins.className}>
+      <div className={space_Grotesk.className}>
         <ProgressBar />
         <div className="bg-black">
           <div className="mx-auto max-w-[1050px] px-6 sm:px-12">

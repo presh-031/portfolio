@@ -11,12 +11,15 @@ import typescript from "../assets/typescript.png";
 import sass from "../assets/sass.png";
 import git from "../assets/git-orange.png";
 import github from "../assets/github.png";
+import { league_Gothic } from "@/app/fonts";
 
 const TechStack = () => {
   return (
     <div className=" pb-[6rem]">
       {/* Tech stack with icons and names only go below. */}
-      <h2 className=" mb-[2rem] text-[2rem] text-[#ebebeb] sm:text-[3rem]">
+      <h2
+        className={`${league_Gothic.className} mb-[2rem] text-[2rem] text-[#ebebeb] sm:text-[3rem]`}
+      >
         Tech Stack
       </h2>
       <div className="grid grid-cols-3 gap-8 text-center text-xl text-[#d6d6d6] sm:grid-cols-4 md:text-3xl">

@@ -7,7 +7,7 @@ import { BiCodeAlt, BiArrowBack } from "react-icons/bi";
 import Gallery from "@/components/Gallery";
 
 import "../../globals.css";
-import { poppins } from "@/app/fonts";
+import { space_Grotesk, league_Gothic } from "@/app/fonts";
 
 const Project = ({ params }: { params: { id: string } }) => {
   const router = useRouter();
@@ -23,7 +23,7 @@ const Project = ({ params }: { params: { id: string } }) => {
 
   return (
     <div
-      className={`${poppins.className} min-h-screen  bg-black  px-6 py-16 text-white  sm:px-12`}
+      className={`${space_Grotesk.className} min-h-screen  bg-black  px-6 py-16 text-white  sm:px-12`}
     >
       <div className="mx-auto max-w-[1050px]">
         <div className="lg:mb-12 lg:flex lg:items-center">
@@ -47,7 +47,11 @@ const Project = ({ params }: { params: { id: string } }) => {
                 {project[0].id}
               </h1>
               <div>
-                <p className="mt-12 text-3xl uppercase text-[#ebebeb]">About</p>
+                <p
+                  className={` ${league_Gothic.className} mt-12 text-3xl uppercase text-[#ebebeb]`}
+                >
+                  About
+                </p>
                 <p className=" mt-6 text-2xl text-[#d6d6d6]">
                   {project[0].about}
                 </p>
@@ -56,7 +60,9 @@ const Project = ({ params }: { params: { id: string } }) => {
 
             {/* screenshots container */}
             <div className="div3 lg:hidden lg:flex-1">
-              <p className="mb-6 mt-12 text-3xl uppercase text-[#ebebeb]">
+              <p
+                className={` ${league_Gothic.className} mb-6 mt-12 text-3xl uppercase text-[#ebebeb]`}
+              >
                 Screenshots
               </p>
               <Gallery route={params.id} />
@@ -65,7 +71,11 @@ const Project = ({ params }: { params: { id: string } }) => {
             {/* links container */}
             <div className="div2 lg:flex-1">
               {" "}
-              <p className="mt-12 text-3xl uppercase text-[#ebebeb]">Links</p>
+              <p
+                className={` ${league_Gothic.className} mt-12 text-3xl uppercase text-[#ebebeb]`}
+              >
+                Links
+              </p>
               <div className="mt-8 flex gap-8">
                 <a
                   className="flex w-[10rem] items-center justify-center gap-2 rounded bg-gray-200 py-6   text-3xl text-gray-700"
@@ -84,7 +94,9 @@ const Project = ({ params }: { params: { id: string } }) => {
                   Live
                 </a>
               </div>
-              <p className="mt-12 text-3xl uppercase text-[#ebebeb]">
+              <p
+                className={` ${league_Gothic.className} mt-12 text-3xl uppercase text-[#ebebeb]`}
+              >
                 Built with
               </p>
               <div className="mt-6 grid grid-cols-3 gap-8 text-xl text-[#d6d6d6]">
