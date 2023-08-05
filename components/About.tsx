@@ -1,4 +1,3 @@
-import Image from "next/image";
 import React from "react";
 import { league_Gothic } from "@/app/fonts";
 

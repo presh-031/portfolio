@@ -1,12 +1,16 @@
-import About from "@/components/About";
-import Hero from "@/components/Hero";
-import Showcase from "@/components/Showcase";
-import Testimonials from "@/components/Testimonials";
 import RootLayout from "./layout";
-import Contact from "@/components/Contact";
-import Footer from "@/components/Footer";
-import TechStack from "@/components/TechStack";
-import ProgressBar from "@/components/ProgressBar";
+
+import {
+  About,
+  Hero,
+  Showcase,
+  Testimonials,
+  Contact,
+  Footer,
+  TechStack,
+  ProgressBar,
+} from "../index";
+
 import { space_Grotesk } from "./fonts";
 
 export default function Home() {

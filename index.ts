@@ -1,0 +1,11 @@
+export { default as ScrollDownMouse } from "./components/ScrollDownMouse";
+export { default as About } from "./components/About";
+export { default as Hero } from "./components/Hero";
+export { default as Showcase } from "./components/Showcase";
+export { default as Testimonials } from "./components/Testimonials/index";
+export { default as Contact } from "./components/Contact";
+export { default as Footer } from "./components/Footer";
+export { default as TechStack } from "./components/TechStack";
+export { default as Gallery } from "./components/Gallery";
+export { default as ProgressBar } from "./components/ProgressBar";
+export { default as Testimonial } from "./components/Testimonials/Testimonial";

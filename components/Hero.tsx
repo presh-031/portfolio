@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 import self from "../assets/self.jpg";
 import { BsArrowDown, BsArrowDownUp, BsGithub } from "react-icons/bs";
-import ScrollDownMouse from "./ScrollDownMouse";
+import { ScrollDownMouse } from "../index";
 import { AiOutlineTwitter, AiFillLinkedin } from "react-icons/ai";
 // import { BiLogoGithub } from "react-icons/bi";
 

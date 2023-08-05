@@ -1,5 +1,5 @@
 import React from "react";
-import Testimonial from "./Testimonial";
+import { Testimonial } from "../../index";
 import gaybible from "../../assets/gaybible.webp";
 
 const Testimonials = () => {

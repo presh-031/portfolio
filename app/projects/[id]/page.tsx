@@ -4,7 +4,7 @@ import { useRouter } from "next/navigation";
 import { projects } from "@/app/data";
 import Image from "next/image";
 import { BiCodeAlt, BiArrowBack } from "react-icons/bi";
-import Gallery from "@/components/Gallery";
+import { Gallery } from "../../../index";
 
 import "../../globals.css";
 import { space_Grotesk, league_Gothic } from "@/app/fonts";
@@ -16,7 +16,7 @@ const Project = ({ params }: { params: { id: string } }) => {
     return project.id === params.id;
   });
 
-  if (project.length === 0) {
+  if (!project.length) {
     router.push("/");
     return;
   }
