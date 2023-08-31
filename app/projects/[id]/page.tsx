@@ -4,7 +4,7 @@ import { useRouter } from "next/navigation";
 import { projects } from "@/app/data";
 import Image from "next/image";
 import { BiCodeAlt, BiArrowBack } from "react-icons/bi";
-import { Gallery } from "../../../index";
+// import { Gallery } from "../../../index";
 
 import "../../globals.css";
 import { space_Grotesk, league_Gothic } from "@/app/fonts";
