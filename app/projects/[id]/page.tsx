@@ -8,6 +8,7 @@ import { Gallery } from "../../../index";
 
 import "../../globals.css";
 import { space_Grotesk, league_Gothic } from "@/app/fonts";
+import TestGallery from "@/components/TestGallery";
 
 const Project = ({ params }: { params: { id: string } }) => {
   const router = useRouter();
@@ -61,11 +62,12 @@ const Project = ({ params }: { params: { id: string } }) => {
             {/* screenshots container */}
             <div className="div3 lg:hidden lg:flex-1">
               <p
-                className={` ${league_Gothic.className} mb-6 mt-12 text-3xl uppercase text-[#ebebeb]`}
+                className={`${league_Gothic.className} mb-6 mt-12 text-3xl uppercase text-[#ebebeb]`}
               >
                 Screenshots
               </p>
-              <Gallery route={params.id} />
+              {/* <Gallery route={params.id} /> */}
+              <TestGallery />
             </div>
 
             {/* links container */}
@@ -127,7 +129,8 @@ const Project = ({ params }: { params: { id: string } }) => {
             <p className="mb-6 mt-12 text-3xl uppercase text-[#ebebeb]">
               Screenshots
             </p>
-            <Gallery route={params.id} />
+            {/* <Gallery route={params.id} /> */}
+            <TestGallery />
           </div>
         </div>
       </div>
