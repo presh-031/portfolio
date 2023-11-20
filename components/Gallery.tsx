@@ -1,73 +1,90 @@
-// @ts-ignore
-import ImageGallery from "react-image-gallery";
-import "react-image-gallery/styles/css/image-gallery.css";
+"use client";
+import Image from "next/image";
+
+// Swiper imports
+import { Navigation, A11y, Pagination } from "swiper/modules";
+import { Swiper, SwiperSlide } from "swiper/react";
+
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
 
 type GalleryProps = {
   route: string;
 };
 
 const Gallery = ({ route }: GalleryProps) => {
-  const getDynamicImages = () => {
-    let dynamicImages: any = [];
-    if (route === "designo") {
-      dynamicImages = [
-        {
-          original: "/designo/designo-0.png",
-          thumbnail: "/designo/designo-0.png",
-        },
-        {
-          original: "/designo/designo-1.png",
-          thumbnail: "/designo/designo-1.png",
-        },
-        {
-          original: "/designo/designo-2.png",
-          thumbnail: "/designo/designo-2.png",
-        },
-        {
-          original: "/designo/designo-3.png",
-          thumbnail: "/designo/designo-3.png",
-        },
-        {
-          original: "/designo/designo-4.png",
-          thumbnail: "/designo/designo-4.png",
-        },
-        {
-          original: "/designo/designo-5.png",
-          thumbnail: "/designo/designo-5.png",
-        },
-        {
-          original: "/designo/designo-6.png",
-          thumbnail: "/designo/designo-6.png",
-        },
-        {
-          original: "/designo/designo-7.png",
-          thumbnail: "/designo/designo-7.png",
-        },
-        {
-          original: "/designo/designo-8.png",
-          thumbnail: "/designo/designo-8.png",
-        },
-      ];
-    }
-
-    return dynamicImages;
-  };
-
   return (
-    <div>
-      {getDynamicImages().length ? (
-        <div className="flex h-[50rem] flex-col justify-start overflow-hidden">
-          <ImageGallery
-            items={getDynamicImages()}
-            slideInterval={2500}
-            showThumbnails={false}
-            originalAlt={route}
-            description={`Screenshots of the ${route} project`}
-          />
-        </div>
-      ) : (
-        <p>Screenshots not yet available, check progess on live link.</p>
-      )}
+    <div className="">
+      <Swiper
+        // install Swiper modules
+        modules={[Navigation, A11y, Pagination]}
+        navigation
+        pagination
+        breakpoints={{
+          0: {
+            spaceBetween: 10,
+            slidesPerView: 1,
+          },
+        }}
+      >
+        <SwiperSlide>
+          <div className="grid h-full place-items-center">
+            <Image
+              src="/designo/designo-0.png"
+              alt="image1"
+              width={300}
+              height={650}
+              className="aspect-auto h-full w-full"
+            />
+          </div>
+        </SwiperSlide>
+        <SwiperSlide>
+          <div className="grid h-full place-items-center">
+            <Image
+              src="/designo/designo-1.png"
+              alt="image1"
+              width={300}
+              height={650}
+              className="aspect-auto h-[60rem] w-full"
+            />
+          </div>
+        </SwiperSlide>
+        <SwiperSlide>
+          <div className="grid h-full place-items-center">
+            <Image
+              src="/designo/designo-2.png"
+              alt="image1"
+              width={300}
+              height={650}
+              className="aspect-auto h-[60rem] w-full"
+            />
+          </div>
+        </SwiperSlide>
+        <SwiperSlide>
+          <div className="grid h-full place-items-center">
+            <Image
+              src="/designo/designo-3.png"
+              alt="image1"
+              width={300}
+              height={650}
+              className="aspect-auto h-full w-full"
+            />
+          </div>
+        </SwiperSlide>
+        <SwiperSlide>
+          <div className="grid h-full place-items-center">
+            <Image
+              src="/designo/designo-6.png"
+              alt="image1"
+              width={300}
+              height={650}
+              className="aspect-auto h-[75rem] w-full object-cover object-top"
+            />
+          </div>
+        </SwiperSlide>
+      </Swiper>
     </div>
   );
 };

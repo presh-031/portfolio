@@ -14,3 +14,34 @@
   font-size: 62.5%;
   scroll-behavior: smooth;
 }
+
+/* swiper styles */
+* {
+  min-height: 0;
+  min-width: 0;
+}
+
+.swiper-button-prev::after {
+  color: #634eec;
+}
+.swiper-button-next::after {
+  color: #634eec;
+}
+.swiper-pagination-bullet-active {
+  background-color: #634eec !important;
+}
+
+/* best solution for images here below. */
+.swiper {
+  width: 100%;
+  height: 750px !important;
+}
+
+.swiper-slide {
+  height: 750px !important;
+  text-align: center;
+  width: 100%;
+}
+.swiper-content {
+  height: 750px !important;
+}

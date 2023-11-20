@@ -8,7 +8,8 @@ import { BiCodeAlt, BiArrowBack } from "react-icons/bi";
 
 import "../../globals.css";
 import { space_Grotesk, league_Gothic } from "@/app/fonts";
-import TestGallery from "@/components/TestGallery";
+import Gallery from "@/components/Gallery";
+// import TestGallery from "@/components/TestGallery";
 
 const Project = ({ params }: { params: { id: string } }) => {
   const router = useRouter();
@@ -24,10 +25,10 @@ const Project = ({ params }: { params: { id: string } }) => {
 
   return (
     <div
-      className={`${space_Grotesk.className} min-h-screen  bg-black  px-6 py-16 text-white  sm:px-12`}
+      className={`${space_Grotesk.className} min-h-screen  bg-black  py-16 text-white  `}
     >
       <div className="mx-auto max-w-[1050px]">
-        <div className="lg:mb-12 lg:flex lg:items-center">
+        <div className="px-6 sm:px-12 lg:mb-12 lg:flex lg:items-center">
           <button
             type="button"
             onClick={() => router.back()}
@@ -40,10 +41,11 @@ const Project = ({ params }: { params: { id: string } }) => {
             {project[0].id}
           </h1>
         </div>
+
         <div className="container flex flex-col lg:flex-row lg:gap-12">
           <div className="parent flex h-fit flex-col lg:flex-1 ">
-            {/* about container */}
-            <div className="div1 lg:flex-1">
+            {/* about section */}
+            <section className="px-6 sm:px-12 lg:flex-1">
               <h1 className="mt-12 text-center text-6xl uppercase lg:hidden">
                 {project[0].id}
               </h1>
@@ -57,21 +59,20 @@ const Project = ({ params }: { params: { id: string } }) => {
                   {project[0].about}
                 </p>
               </div>
-            </div>
+            </section>
 
-            {/* screenshots container */}
-            <div className="div3 lg:hidden lg:flex-1">
+            {/* screenshots section */}
+            <section className=" sm:px-12 lg:hidden lg:flex-1">
               <p
-                className={`${league_Gothic.className} mb-6 mt-12 text-3xl uppercase text-[#ebebeb]`}
+                className={`${league_Gothic.className} mb-6 mt-12 px-6 text-3xl uppercase text-[#ebebeb] sm:px-12`}
               >
                 Screenshots
               </p>
-              {/* <Gallery route={params.id} /> */}
-              <TestGallery />
-            </div>
+              <Gallery route={params.id} />
+            </section>
 
-            {/* links container */}
-            <div className="div2 lg:flex-1">
+            {/* links section */}
+            <section className="px-6 sm:px-12 lg:flex-1">
               {" "}
               <p
                 className={` ${league_Gothic.className} mt-12 text-3xl uppercase text-[#ebebeb]`}
@@ -96,6 +97,10 @@ const Project = ({ params }: { params: { id: string } }) => {
                   Live
                 </a>
               </div>
+            </section>
+
+            {/* tech stack section */}
+            <section className="px-6 sm:px-12">
               <p
                 className={` ${league_Gothic.className} mt-12 text-3xl uppercase text-[#ebebeb]`}
               >
@@ -121,16 +126,15 @@ const Project = ({ params }: { params: { id: string } }) => {
                   );
                 })}
               </div>
-            </div>
+            </section>
           </div>
 
-          {/* screenshots container */}
-          <div className="div3 hidden lg:block lg:flex-1">
+          {/* screenshots section */}
+          <div className=" hidden border lg:block lg:flex-1">
             <p className="mb-6 mt-12 text-3xl uppercase text-[#ebebeb]">
               Screenshots
             </p>
-            {/* <Gallery route={params.id} /> */}
-            <TestGallery />
+            <Gallery route={params.id} />
           </div>
         </div>
       </div>
