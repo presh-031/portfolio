@@ -4,12 +4,10 @@ import { useRouter } from "next/navigation";
 import { projects } from "@/app/data";
 import Image from "next/image";
 import { BiCodeAlt, BiArrowBack } from "react-icons/bi";
-// import { Gallery } from "../../../index";
 
 import "../../globals.css";
 import { space_Grotesk, league_Gothic } from "@/app/fonts";
 import Gallery from "@/components/Gallery";
-// import TestGallery from "@/components/TestGallery";
 
 const Project = ({ params }: { params: { id: string } }) => {
   const router = useRouter();
@@ -25,10 +23,10 @@ const Project = ({ params }: { params: { id: string } }) => {
 
   return (
     <div
-      className={`${space_Grotesk.className} min-h-screen  bg-black  py-16 text-white  `}
+      className={`${space_Grotesk.className} min-h-screen bg-black  py-16 text-white  `}
     >
-      <div className="mx-auto max-w-[1050px]">
-        <div className="px-6 sm:px-12 lg:mb-12 lg:flex lg:items-center">
+      <div className="mx-auto max-w-[1050px] ">
+        <div className=" px-6 sm:px-12 lg:mb-12 lg:flex lg:items-center">
           <button
             type="button"
             onClick={() => router.back()}
@@ -42,8 +40,8 @@ const Project = ({ params }: { params: { id: string } }) => {
           </h1>
         </div>
 
-        <div className="container flex flex-col lg:flex-row lg:gap-12">
-          <div className="parent flex h-fit flex-col lg:flex-1 ">
+        <div className="container flex flex-col  lg:flex-row lg:gap-12">
+          <div className="parent  flex h-fit  flex-col lg:flex-1 ">
             {/* about section */}
             <section className="px-6 sm:px-12 lg:flex-1">
               <h1 className="mt-12 text-center text-6xl uppercase lg:hidden">
@@ -62,7 +60,7 @@ const Project = ({ params }: { params: { id: string } }) => {
             </section>
 
             {/* screenshots section */}
-            <section className=" sm:px-12 lg:hidden lg:flex-1">
+            <section className="min-[540px]:px-6 sm:px-12 lg:hidden lg:flex-1">
               <p
                 className={`${league_Gothic.className} mb-6 mt-12 px-6 text-3xl uppercase text-[#ebebeb] sm:px-12`}
               >
@@ -106,12 +104,12 @@ const Project = ({ params }: { params: { id: string } }) => {
               >
                 Built with
               </p>
-              <div className="mt-6 grid grid-cols-3 gap-8 text-xl text-[#d6d6d6]">
+              <div className="mt-6 grid grid-cols-3 gap-8  text-xl text-[#d6d6d6]">
                 {project[0].techStack.map((tech) => {
                   return (
                     <div
                       key={tech}
-                      className="flex h-[8rem] flex-col items-center justify-between"
+                      className="flex h-[8rem] flex-col items-center justify-between "
                     >
                       <Image
                         className="object-cover"
@@ -130,7 +128,7 @@ const Project = ({ params }: { params: { id: string } }) => {
           </div>
 
           {/* screenshots section */}
-          <div className=" hidden border lg:block lg:flex-1">
+          <div className=" hidden  lg:block lg:flex-1">
             <p className="mb-6 mt-12 text-3xl uppercase text-[#ebebeb]">
               Screenshots
             </p>

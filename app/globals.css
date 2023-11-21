@@ -45,3 +45,45 @@
 .swiper-content {
   height: 750px !important;
 }
+
+@media (min-width: 600px) {
+  .swiper {
+    height: 850px !important;
+  }
+
+  .swiper-slide {
+    height: 850px !important;
+  }
+
+  .swiper-content {
+    height: 850px !important;
+  }
+}
+
+@media (min-width: 768px) {
+  .swiper {
+    height: 1200px !important;
+  }
+
+  .swiper-slide {
+    height: 1200px !important;
+  }
+
+  .swiper-content {
+    height: 1200px !important;
+  }
+}
+
+@media (min-width: 1024px) {
+  .swiper {
+    height: 750px !important;
+  }
+
+  .swiper-slide {
+    height: 750px !important;
+  }
+
+  .swiper-content {
+    height: 750px !important;
+  }
+}
