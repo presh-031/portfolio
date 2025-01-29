@@ -1,20 +1,25 @@
 "use client";
-import Image from "next/image";
 
-// Swiper imports
-import { Navigation, A11y, Pagination } from "swiper/modules";
-import { Swiper, SwiperSlide } from "swiper/react";
-
-// Import Swiper styles
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 
+import { A11y, Navigation, Pagination } from "swiper/modules";
+import { Swiper, SwiperSlide } from "swiper/react";
+
+import Image from "next/image";
+
+// Swiper imports
+
+// Import Swiper styles
+
 type GalleryProps = {
   route: string;
+  screenshots: {}[];
 };
 
-const Gallery = ({ route }: GalleryProps) => {
+const Gallery = ({ route, screenshots }: GalleryProps) => {
+  // console.log(screenshots[0]);
   return (
     <div className="">
       <Swiper
@@ -29,61 +34,21 @@ const Gallery = ({ route }: GalleryProps) => {
           },
         }}
       >
-        <SwiperSlide>
-          <div className="grid h-full place-items-center">
-            <Image
-              src="/designo/designo-0.png"
-              alt="image1"
-              width={300}
-              height={650}
-              className="aspect-auto h-full w-full"
-            />
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div className="grid h-full place-items-center">
-            <Image
-              src="/designo/designo-1.png"
-              alt="image1"
-              width={300}
-              height={650}
-              className="aspect-auto h-[60rem] w-full"
-            />
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div className="grid h-full place-items-center">
-            <Image
-              src="/designo/designo-2.png"
-              alt="image1"
-              width={300}
-              height={650}
-              className="aspect-auto h-[60rem] w-full"
-            />
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div className="grid h-full place-items-center">
-            <Image
-              src="/designo/designo-3.png"
-              alt="image1"
-              width={300}
-              height={650}
-              className="aspect-auto h-full w-full"
-            />
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div className="grid h-full place-items-center">
-            <Image
-              src="/designo/designo-6.png"
-              alt="image1"
-              width={300}
-              height={650}
-              className="aspect-auto h-[75rem] w-full object-cover object-top"
-            />
-          </div>
-        </SwiperSlide>
+        {screenshots?.map((screenshot: any) => {
+          return (
+            <SwiperSlide key={screenshot.src}>
+              <div className="grid h-full place-items-center">
+                <Image
+                  src={screenshot.src}
+                  alt={screenshot.src}
+                  width={300}
+                  height={650}
+                  className={screenshot.styles}
+                />
+              </div>
+            </SwiperSlide>
+          );
+        })}
       </Swiper>
     </div>
   );

@@ -1,11 +1,13 @@
-import React from "react";
-import bubblish from "../assets/bubblish.webp";
-import Image from "next/image";
 import { FaInstagram, FaTwitter } from "react-icons/fa";
 import { MdEmail, MdOutlineEmail } from "react-icons/md";
+
 import { BsGithub } from "react-icons/bs";
 import { HiOutlineDocument } from "react-icons/hi";
+import Image from "next/image";
+import React from "react";
+import bubblish from "../assets/bubblish.webp";
 import { league_Gothic } from "@/app/fonts";
+
 const Contact = () => {
   return (
     <div className="pt-24 text-white  sm:pt-44">
@@ -25,9 +27,8 @@ const Contact = () => {
             Contact
           </h3>
           <p className="text-3xl leading-[3rem] text-[#d6d6d6]">
-            Impressed and can’t wait to get your hands on Presh’s skills? Don’t
-            hesitate to drop him a line and dive into the world of incredible
-            web experiences!
+            Got a project, idea, or just want to say hi? Drop me a message—I’d
+            love to hear from you!
           </p>
           <div className="mt-16  text-4xl text-[#d6d6d6]">
             {/* The link will be on each icon */}

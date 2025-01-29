@@ -1,13 +1,14 @@
 "use client";
-import Link from "next/link";
-import React, { useState } from "react";
-import audiophile from "../assets/audiophile.svg";
-import gaybible from "../assets/gaybible.webp";
-import designo from "../assets/designo.png";
-import tweeter from "../assets/tweeter.svg";
-import Image from "next/image";
 
+import React, { useState } from "react";
+
+import Image from "next/image";
+import Link from "next/link";
+import audiophile from "../assets/audiophile.svg";
+import designo from "../assets/designo.png";
+import gaysbie from "../assets/gaysbie.png";
 import { league_Gothic } from "@/app/fonts";
+import tweeter from "../assets/tweeter.svg";
 
 const Showcase = () => {
   const [activeButton, setActiveButton] = useState("websites");
@@ -53,13 +54,13 @@ const Showcase = () => {
           {activeButton === "websites" && (
             <div className=" grid grid-cols-2  gap-[1.8rem]  text-3xl text-white sm:gap-[2.2rem] md:gap-[3rem]">
               <Link
-                href={`/projects/gaybible`}
+                href={`/projects/gaysbie`}
                 className=" grid h-[16rem] place-items-center rounded-[2rem] bg-black min-[480px]:h-[20rem] min-[520px]:h-[24rem]  sm:h-[31rem] min-[776px]:h-[38rem] min-[880px]:h-[40rem] lg:h-[51.5rem] "
               >
                 <Image
                   className="aspect-square h-[100%] w-[80%]  object-contain sm:w-[60%]"
-                  src={gaybible}
-                  alt="gaybible"
+                  src={gaysbie}
+                  alt="gaysbie"
                   width={80}
                   height={80}
                   quality={100}

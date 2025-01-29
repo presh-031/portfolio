@@ -1,13 +1,15 @@
 "use client";
-import React from "react";
-import { useRouter } from "next/navigation";
-import { projects } from "@/app/data";
-import Image from "next/image";
-import { BiCodeAlt, BiArrowBack } from "react-icons/bi";
 
 import "../../globals.css";
-import { space_Grotesk, league_Gothic } from "@/app/fonts";
+
+import { BiArrowBack, BiCodeAlt } from "react-icons/bi";
+import { league_Gothic, space_Grotesk } from "@/app/fonts";
+
 import Gallery from "@/components/Gallery";
+import Image from "next/image";
+import React from "react";
+import { projects } from "@/app/data";
+import { useRouter } from "next/navigation";
 
 const Project = ({ params }: { params: { id: string } }) => {
   const router = useRouter();
@@ -20,6 +22,8 @@ const Project = ({ params }: { params: { id: string } }) => {
     router.push("/");
     return;
   }
+
+  console.log(project);
 
   return (
     <div
@@ -59,14 +63,14 @@ const Project = ({ params }: { params: { id: string } }) => {
               </div>
             </section>
 
-            {/* screenshots section */}
+            {/* screenshots section for mobile */}
             <section className="min-[540px]:px-6 sm:px-12 lg:hidden lg:flex-1">
               <p
                 className={`${league_Gothic.className} mb-6 mt-12 px-6 text-3xl uppercase text-[#ebebeb] sm:px-12`}
               >
                 Screenshots
               </p>
-              <Gallery route={params.id} />
+              <Gallery route={params.id} screenshots={project[0].screenshots} />
             </section>
 
             {/* links section */}
@@ -132,7 +136,7 @@ const Project = ({ params }: { params: { id: string } }) => {
             <p className="mb-6 mt-12 text-3xl uppercase text-[#ebebeb]">
               Screenshots
             </p>
-            <Gallery route={params.id} />
+            <Gallery route={params.id} screenshots={project[0].screenshots} />
           </div>
         </div>
       </div>
