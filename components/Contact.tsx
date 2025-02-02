@@ -1,6 +1,7 @@
-import { FaInstagram, FaTwitter } from "react-icons/fa";
+import { FaInstagram, FaLinkedin, FaTwitter } from "react-icons/fa";
 import { MdEmail, MdOutlineEmail } from "react-icons/md";
 
+import { AiFillLinkedin } from "react-icons/ai";
 import { BsGithub } from "react-icons/bs";
 import { HiOutlineDocument } from "react-icons/hi";
 import Image from "next/image";
@@ -36,6 +37,12 @@ const Contact = () => {
               <span className=" text-3xl leading-[4rem] ">Socials: </span>{" "}
               <a href="https://twitter.com/Presh_031" target="_blank">
                 <FaTwitter />
+              </a>
+              <a href="https://instagram.com/mide_031/" target="_blank">
+                <FaInstagram />
+              </a>
+              <a href="https://www.linkedin.com/in/presh031/" target="_blank">
+                <FaLinkedin />
               </a>
             </div>
             {/* The link will be on each entire paragraph, better ux */}
