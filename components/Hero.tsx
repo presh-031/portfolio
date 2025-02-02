@@ -1,11 +1,13 @@
-import React from "react";
-import Image from "next/image";
-import self from "../assets/self.jpg";
-import { BsGithub } from "react-icons/bs";
-import { ScrollDownMouse } from "../index";
-import { AiOutlineTwitter, AiFillLinkedin } from "react-icons/ai";
-
 import "../app/animations.css";
+
+import { AiFillLinkedin, AiOutlineTwitter } from "react-icons/ai";
+
+import { BsGithub } from "react-icons/bs";
+import { FaFileAlt } from "react-icons/fa";
+import Image from "next/image";
+import React from "react";
+import { ScrollDownMouse } from "../index";
+import self from "../assets/self.jpg";
 
 const Hero = () => {
   return (
@@ -32,10 +34,14 @@ const Hero = () => {
           <a href="https://github.com/presh-031" target="_blank">
             <BsGithub />
           </a>
-          <a href="https://twitter.com/presh-031" target="_blank">
-            <AiOutlineTwitter />
+
+          <a href="/01_Precious_Resume.pdf" download="01_Precious_Resume.pdf">
+            <FaFileAlt />
           </a>
-          <AiFillLinkedin />
+
+          <a href="https://www.linkedin.com/in/presh031/" target="_blank">
+            <AiFillLinkedin />
+          </a>
         </div>
       </section>
 
@@ -46,8 +52,19 @@ const Hero = () => {
       <div className="hidden  text-white   md:flex md:justify-between md:text-4xl">
         <p>Frontend Wizardry</p>
         <div className="flex justify-center gap-4">
-          <p>Resume</p> <p>Email</p>
-          <p>Github</p>
+          <p>
+            <a href="/01_Precious_Resume.pdf" download="01_Precious_Resume.pdf">
+              Resume
+            </a>
+          </p>{" "}
+          <p>
+            <a href="mailto:akingbulugbe.dev@gmail.com">Email</a>
+          </p>
+          <p>
+            <a href="https://github.com/presh-031" target="_blank">
+              Github
+            </a>
+          </p>
         </div>
         <p className="">App development</p>
       </div>

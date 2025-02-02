@@ -212,26 +212,60 @@ export const projects = [
       },
     ],
   },
-  // {
-  //   id: "tweeter",
-  //   about:
-  //     "Tweeter is an app that closely resembles the popular social media platform Twitter, which happens to be my personal favorite. This clone app allows users to effortlessly sign up or log in to their accounts. Once logged in, users can explore a timeline filled with tweets from other users. They have the ability to engage with these tweets by liking, retweeting, and bookmarking them. Users can also contribute to the platform by creating and sharing their own tweets. Tweeter also provides the option to edit profile information and delete previously published tweets, offering users greater control over their online presence.",
-  //   techStack: [
-  //     "react",
-  //     "nextjs",
-  //     "tailwind",
-  //     "javascript",
-  //     "react-icons",
-  //     "typescript",
-  //     "firebase",
-  //     "moment",
-  //     "react-hot-toast",
-  //     "yup",
-  //     "react-hookform",
-  //     "git",
-  //     "github",
-  //   ],
-  //   github: "https://github.com/presh-031/tweeter",
-  //   live: "https://presh-031-tweeter.vercel.app",
-  // },
+  {
+    id: "tweeter",
+    about:
+      "Tweeter is an app that closely resembles the popular social media platform Twitter, which happens to be my personal favorite. This clone app allows users to effortlessly sign up or log in to their accounts. Once logged in, users can explore a timeline filled with tweets from other users. They have the ability to engage with these tweets by liking, retweeting, and bookmarking them. Users can also contribute to the platform by creating and sharing their own tweets. Tweeter also provides the option to edit profile information and delete previously published tweets, offering users greater control over their online presence.",
+    techStack: [
+      "react",
+      "nextjs",
+      "tailwind",
+      "javascript",
+      "react-icons",
+      "typescript",
+      "firebase",
+      "moment",
+      "react-hot-toast",
+      "yup",
+      "react-hookform",
+      "git",
+      "github",
+    ],
+    github: "https://github.com/presh-031/tweeter",
+    live: "https://presh-031-tweeter.vercel.app",
+    screenshots: [
+      {
+        src: "/tweeter/tweeter-1.png",
+        styles: "aspect-auto h-[40rem] w-full",
+      },
+      {
+        src: "/tweeter/tweeter-2.png",
+        styles: "aspect-auto h-[40rem] w-full",
+      },
+      {
+        src: "/tweeter/tweeter-3.png",
+        styles: "aspect-auto h-[40rem] w-full",
+      },
+      {
+        src: "/tweeter/tweeter-4.png",
+        styles: "aspect-auto h-[40rem] w-full",
+      },
+      {
+        src: "/tweeter/tweeter-5.png",
+        styles: "aspect-auto h-[40rem] w-full",
+      },
+      {
+        src: "/tweeter/tweeter-6.png",
+        styles: "aspect-auto h-[40rem] w-full",
+      },
+      {
+        src: "/tweeter/tweeter-7.png",
+        styles: "aspect-auto h-[40rem] w-full",
+      },
+      {
+        src: "/tweeter/tweeter-8.png",
+        styles: "aspect-auto h-[20rem] w-full",
+      },
+    ],
+  },
 ];
